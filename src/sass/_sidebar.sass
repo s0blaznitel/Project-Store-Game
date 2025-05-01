@@ -2,3 +2,22 @@
     background: $color-green-dark
     grid-row: 1 / -1
     grid-column: sidebar-start / sidebar-end
+    padding-top: 3.7rem
+    display: flex
+    justify-content: center
+
+.hamburger
+    border: none
+    background: $color-gray-light
+    height: .2rem
+    width: 5rem
+    &::before, &::after
+        content: ""
+        background: $color-gray-light
+        height: .2rem
+        width: 5rem
+        display: block
+    &::before
+        transform: translateY(-1rem)
+    &::after
+        transform: translateY(1rem)
